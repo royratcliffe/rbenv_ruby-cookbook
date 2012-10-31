@@ -6,10 +6,9 @@
 # All rights reserved
 #
 
-node[:rbenv_ruby].each do |rbenv|
-  Chef::Log.info "Installing Ruby #{rbenv.map { |k, v| "#{k}:#{v}" }.join(' ') }"
-  rbenv_ruby rbenv[:ruby_version] do
-    global rbenv[:global] || false
-    force rbenv[:force] || false
+node[:rbenv_rubies].each do |rubie|
+  Chef::Log.info "Installing Ruby #{rubie}"
+  rbenv_ruby rubie do
+    action :install
   end
 end
