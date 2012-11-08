@@ -1,3 +1,1 @@
-default[:rbenv_rubies] = [
-  '1.9.3-p286'
-]
+default[:rbenv_rubies] = ['1.9.3-p286']
