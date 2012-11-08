@@ -18,7 +18,8 @@ Attributes
   An array of strings, each string specifying a Ruby version number. Defaults
   to array `['1.9.3-p286']`, meaning install just one Ruby version: 1.9.3,
   patch level 286. After installation, you will find the gem binary for this
-  version at `/usr/local/rbenv/versions/1.9.3-p286/bin/gem`.
+  version at `/usr/local/rbenv/versions/1.9.3-p286/bin/gem`. Use the `rbenv
+  install --list` command to list all the available rubies.
 
 Usage
 =====
